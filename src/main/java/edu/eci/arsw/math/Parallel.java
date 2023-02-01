@@ -58,6 +58,7 @@ public class Parallel {
         }
         return sb.toString();
     }
+<<<<<<< HEAD
     public static void main(String a[]) throws InterruptedException {
         System.out.println("Case with (1000): ");
         Parallel T0 = new Parallel(1000, 500);
@@ -87,3 +88,6 @@ public class Parallel {
 
 
 
+=======
+}
+>>>>>>> 9b6133a0b6f9647c5d84de902c9d2d3fbaee878b
