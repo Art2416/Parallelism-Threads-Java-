@@ -48,5 +48,25 @@ public class PiCalcTest {
             }
         }
     }
+    @Test
+    public void piGenTest_2thread() throws InterruptedException {
+        String expected = "243F6A8885A308D313198A2E03707344A4093822299F31D0082EFA98EC4E6C89452821E638D01377BE5466CF34E90C6CC0AC";
 
+        Parallel test2 = new Parallel(100,2);
+        String obtained = test2.calculate();
+        assertEquals(expected, obtained);
+    }
+
+    /**
+     *
+     * @throws InterruptedException
+     */
+    @Test
+    public void piGenTest_3thread() throws InterruptedException {
+        String expected = "243F6A8885A308D313198A2E03707344A4093822299F31D0082EFA98EC4E6C89452821E638D01377BE5466CF34E90C6CC0AC";
+
+        Parallel test3 = new Parallel(100,3);
+        String obtained = test3.calculate();
+        assertEquals(expected, obtained);
+    }
 }
